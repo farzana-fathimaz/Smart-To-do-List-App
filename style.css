@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #3f51b5;
+  }
+  
+  input, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 5px 10px 0;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #3f51b5;
+    color: white;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+    
+
+/*body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+    color: #eee;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+  }  
+
+  .dark-mode {
+    background: #222;
+    color: #f9f9f9;
+  }
+
+  .app {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  input, select, button {
+    padding: 10px;
+    margin: 5px 0;
+  }
+  button {
+    cursor: pointer;
+  }
+*/
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    background: #eaeaea;
+    padding: 10px;
+    border-left: 8px solid gray;
+    margin: 10px 0;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .task.high { border-color: red; }
+  .task.medium { border-color: orange; }
+  .task.low { border-color: green; }
+  .task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+  }
+
+  .task .deadline {
+    font-size: 0.85em;
+    color: #555;
+  }
+  #toggleMode {
+    margin-top: 10px;
+  }

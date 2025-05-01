@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To-Do List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="app">
+    <h1>TaskNova</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter a task..." required />
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="datetime-local" id="deadline" required />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="taskList"></div>
+    
+    <div id="streakTracker">Tasks completed today: <span id="streak">0</span></div>
+    <button id="toggleMode">Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
