@@ -34,7 +34,7 @@ function renderTasks() {
   const now = new Date();
   tasks.forEach(task => {
     const taskEl = document.createElement('div');
-    taskEl.className = task ${task.priority};
+    taskEl.className = task;{task.priority};
     if (task.completed) taskEl.classList.add('completed');
 
     const deadlineTime = new Date(task.deadline);
