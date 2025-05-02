@@ -1,102 +1,93 @@
+/* Global styles with pastel background */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #3f51b5;
-  }
-  
-  input, button {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    margin: 10px 5px 10px 0;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #3f51b5;
-    color: white;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-    
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #d4fc79, #96e6a1); /* pastel green gradient */
+  color: #111;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
-/*body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
-    color: #eee;
-    padding: 20px;
-    transition: background 0.3s, color 0.3s;
-  }  
+/* Centering TaskNova */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
 
-  .dark-mode {
-    background: #222;
-    color: #f9f9f9;
-  }
+/* App container */
+.app {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
 
-  .app {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  input, select, button {
-    padding: 10px;
-    margin: 5px 0;
-  }
-  button {
-    cursor: pointer;
-  }
-*/
+/* Inputs and controls */
+input, select, button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #c8e6c9;
+  outline: none;
+}
 
-  .task {
-    display: flex;
-    justify-content: space-between;
-    background: #eaeaea;
-    padding: 10px;
-    border-left: 8px solid gray;
-    margin: 10px 0;
-    border-radius: 5px;
-    align-items: center;
-  }
+input, select {
+  border: 1px solid #000 !important; /* Black border */
+}
 
-  .task.high { border-color: red; }
-  .task.medium { border-color: orange; }
-  .task.low { border-color: green; }
-  .task.completed {
-    text-decoration: line-through;
-    opacity: 0.6;
-    transition: all 0.4s ease;
-  }
+button {
+  background-color: #66bb6a; /* pastel green button */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 
-  .task .deadline {
-    font-size: 0.85em;
-    color: #555;
-  }
-  #toggleMode {
-    margin-top: 10px;
-  }
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Task list */
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: #e0f2f1;
+  padding: 10px;
+  border-left: 8px solid gray;
+  margin: 10px 0;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.task.high { border-color: #ef5350; }     /* red */
+.task.medium { border-color: #ffa726; }   /* orange */
+.task.low { border-color: #81c784; }      /* green */
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.task .deadline {
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* Completed count text */
+#taskCount {
+  color: #000;  /* Changed to black */
+  margin-top: 15px;
+  font-weight: bold;
+}
