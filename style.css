@@ -1,7 +1,6 @@
-/* Global styles with pastel background */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #d4fc79, #96e6a1); /* pastel green gradient */
+  background: linear-gradient(to bottom right, #d4fc79, #96e6a1); 
   color: #111;
   padding: 20px;
   transition: background 0.3s, color 0.3s;
@@ -13,7 +12,6 @@ body {
   margin: 0;
 }
 
-/* Centering TaskNova */
 h1 {
   text-align: center;
   font-size: 2.5em;
@@ -21,7 +19,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* App container */
 .app {
   max-width: 600px;
   width: 100%;
